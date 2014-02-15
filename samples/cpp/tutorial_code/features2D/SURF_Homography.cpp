@@ -43,7 +43,7 @@ int main( int argc, char** argv )
   detector.detect( img_scene, keypoints_scene );
 
   //-- Step 2: Calculate descriptors (feature vectors)
-  SurfDescriptorExtractor extractor;
+  SurfDescriptorExtractor extractor( minHessian );
 
   Mat descriptors_object, descriptors_scene;
 
